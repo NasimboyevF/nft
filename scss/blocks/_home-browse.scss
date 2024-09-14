@@ -1,0 +1,161 @@
+.browse
+{
+  padding: 80px 30px;
+
+  h2{
+    @include font(38px,45px);
+    margin-bottom: 60px;
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: auto;
+    gap: 30px;
+
+  }
+
+  &__item{
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    p{
+      padding: 20px 30px 25px;
+    }
+
+    &:hover
+    {
+      transition: all 2s;
+      transform: scale(1.1);
+      img{
+        transition: all 2s;
+        filter: blur(0px);
+      }
+
+      .browse__img::before
+      {
+        transition: all 2s;
+        transform: scale(0.5) translate(50%, 50%);
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      filter: blur(7px);
+    }
+
+    &::before
+    {
+      content: url('../../imgs/art-img.svg');
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      z-index: 4;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .Collectibles::before
+  {
+    content: url('../../imgs/Collectibles-img.svg');
+  }
+
+  .Music::before
+  {
+    content: url('../../imgs/Music-img.svg');
+  }
+
+  .Photography::before
+  {
+    content: url('../../imgs/Photography-img.svg');
+  }
+
+  .Video::before
+  {
+    content: url('../../imgs/Video-img.svg');
+  }
+
+  .Utility::before
+  {
+    content: url('../../imgs/Utility-img.svg');
+  }
+
+  .Sport:before
+  {
+    content: url('../../imgs/Sport-img.svg');
+  }
+
+  .Virtual::before
+  {
+    content: url('../../imgs/VirtualWorlds-img.svg');
+  }
+
+}
+
+
+@media only screen and (max-width:850px){
+
+
+  .browse
+  {
+    padding:40px 30px;
+
+    h2{
+      @include font(28px,39px);
+      margin-bottom: 40px;
+    }
+
+  }
+
+  .browse__img
+  {
+    img{
+      width: 150px;
+    }
+
+    &::before
+    {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+
+
+}
+
+
+@media only screen and (max-width:600px){
+
+  .browse__list
+  {
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+
+

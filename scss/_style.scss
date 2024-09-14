@@ -1,0 +1,82 @@
+@import "./reset";
+
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/WorkSans-VariableFont_wght.woff2) format('woff2');
+}
+
+
+
+:root
+{
+  --color:#FFF
+}
+
+@mixin font($b,$c,$a:600)
+{
+  font-size: $b;
+  line-height: $c;
+  font-weight: $a !important;
+}
+
+body
+{
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.container
+{
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+a,button,p{
+  color: var(--color);
+}
+
+
+.dark-mod
+{
+  background-color: #2B2B2B;
+  color: #FFFFFF;
+}
+
+
+
+.button
+{
+  background-color: #A259FF;
+  color: #FFFFFF;
+  border: 2px solid #A259FF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active
+  {
+    border: 2px solid #A259FF;
+    background-color: transparent;
+  }
+}
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+}
+
+
+
+
+
+
+
+

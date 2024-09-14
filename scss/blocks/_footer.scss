@@ -1,0 +1,169 @@
+.footer
+{
+  padding: 40px 30px;
+
+  h2,h3,p,a{
+    @include font(16px,22px,400);
+    color: #CCCCCC;
+  }
+
+  &__box{
+    max-width: 897px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .links
+  {
+    .logo
+    {
+      display: block;
+      margin-bottom: 30px;
+    }
+    
+    .anima
+    {
+      max-width: 238px;
+      margin-bottom: 20px;
+    }
+
+    p
+    {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .lists{
+
+    .top{
+      @include font(22px,35px,600);
+      margin-bottom: 15px;
+    }
+  }
+
+  .text
+  {
+
+
+    h2{
+      max-width: 330px;
+      @include font(22px,35px,600);
+      margin-bottom: 25px;
+    }
+    p{
+      max-width: 330px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  span{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid #858584;
+  }
+}
+
+
+
+
+@media only screen and (max-width:860px)
+{
+  .footer
+  {
+    padding: 40px 30px;
+  
+    &__box{
+      flex-direction: column;
+    }
+
+  }
+
+}
+
+
+form{
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding-left: 20px;
+
+  &:focus-within
+  {
+    box-shadow: 0px 2px 4px 0px #0000006c inset;
+  }
+
+  input{
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .button
+  {
+    padding: 20px 50px;
+    &:active
+    {
+      color: #A259FF;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width:490px)
+{
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    background: transparent;
+    padding-left: 0;
+
+    &:focus-within
+    {
+      box-shadow: none;
+    }
+
+    input{
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px 0 12px 20px;
+      border-radius: 20px;
+      background-color: #fff;
+      &:focus
+      {
+        box-shadow: 0px 2px 4px 0px #0000006c inset;
+      }
+    }
+
+    .button
+    {
+      padding: 12px ;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &::before
+      {
+        content: url('../../imgs/Subscribe.svg');
+      }
+
+      &:active
+      {
+        color: #A259FF;
+      }
+    }
+  }
+
+
+
+}

@@ -1,0 +1,208 @@
+.join
+{
+  padding: 60px;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #3B3B3B;
+  border-radius: 20px;
+  
+  &__info{
+    max-width: 425px;
+
+    h2{
+      text-transform: capitalize;
+      @include font(38px,46px);
+      margin-bottom: 10px;
+    }
+
+    p
+    {
+      text-transform: capitalize;
+      @include font(22px,35px,400);
+      margin-bottom: 40px;
+    }
+
+    form{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding-left: 20px;
+
+      &:focus-within
+      {
+        box-shadow: 0px 2px 4px 0px #0000006c inset;
+      }
+
+      input{
+        width: 100%;
+        padding: 20px 0;
+      }
+
+      .button
+      {
+        padding: 20px 50px;
+        &:active
+        {
+          color: #A259FF;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width:1000px)
+{
+  .join
+  {
+    padding: 40px 30px;
+    margin: 0 30px;
+ 
+    img{
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    
+    &__info{
+  
+      h2{
+        @include font(28px,39px);
+      }
+  
+      p
+      {
+        text-transform: capitalize;
+        @include font(16px,22px,400);
+        margin-bottom: 40px;
+      }
+  
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        background: transparent;
+        padding-left: 0;
+  
+        &:focus-within
+        {
+          box-shadow: none;
+        }
+  
+        input{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 12px 0 12px 20px;
+          border-radius: 20px;
+          background-color: #fff;
+          &:focus
+          {
+            box-shadow: 0px 2px 4px 0px #0000006c inset;
+          }
+        }
+  
+        .button
+        {
+          padding: 12px ;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          &::before
+          {
+            content: url('../../imgs/Subscribe.svg');
+          }
+
+          &:active
+          {
+            color: #A259FF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:700px)
+{
+  .join
+  {
+    
+    padding: 40px 30px;
+    background: transparent;
+    margin: 0;
+    flex-direction: column;
+    border: none !important;
+
+    img{
+      max-width: 100%;
+    }
+
+    &__info{
+  
+      h2{
+        @include font(28px,39px);
+      }
+  
+      p
+      {
+        text-transform: capitalize;
+        @include font(16px,22px,400);
+        margin-bottom: 40px;
+      }
+  
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        background: transparent;
+        padding-left: 0;
+  
+        &:focus-within
+        {
+          box-shadow: none;
+        }
+  
+        input{
+          box-sizing: border-box;
+          width: 100%;
+          padding: 12px 0 12px 20px;
+          border-radius: 20px;
+          background-color: #fff;
+          &:focus
+          {
+            box-shadow: 0px 2px 4px 0px #0000006c inset;
+          }
+        }
+  
+        .button
+        {
+          padding: 12px ;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          &::before
+          {
+            content: url('../../imgs/Subscribe.svg');
+          }
+
+          &:active
+          {
+            color: #A259FF;
+          }
+        }
+      }
+    }
+  }
+}
