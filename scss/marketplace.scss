@@ -70,7 +70,7 @@
   &__tayps{
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
     p{
       color: #858584;
       @include font(22px,30px);
