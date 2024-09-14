@@ -360,7 +360,7 @@ body {
 }
 .marketplace__cards {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 30px;
   padding: 60px 0 80px;
