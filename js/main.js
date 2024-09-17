@@ -6,14 +6,14 @@ const mod = document.querySelector('.mod')
 
 
   Btn.addEventListener('click', () =>{
-    body.classList.toggle('hidden')
+    body.classList.toggle('hidden');
     Btn.classList.toggle('open');
-    Header.classList.toggle('header-burger')
+    Header.classList.toggle('header-burger');
   });
 
   mod.addEventListener('click', ()=> {
 
-    body.classList.toggle('light-mod')
+    body.classList.toggle('light-mod');
 
   })
 
@@ -24,14 +24,10 @@ const cards = document.querySelector('.marketplace__cards');
 const cardsCol = document.querySelector('.marketplace__cards-collections'); 
 
 nfts.addEventListener('click', ()=> {
-
   collections.classList.remove('activ');
   nfts.classList.add('activ');
-
   cards.classList.remove('none');
   cardsCol.classList.add('none');
-
-
 })
 
 collections.addEventListener('click', ()=> {
@@ -40,7 +36,6 @@ collections.addEventListener('click', ()=> {
 
   cards.classList.add('none');
   cardsCol.classList.remove('none');
-
 })
 
 
@@ -78,60 +73,60 @@ collections.addEventListener('click', ()=> {
 
 
 
-console.log(Number('324'));
-console.log(`result = Number('324'); // 324 (string to number)`);
-console.log(Number('324e-1') );
-console.log(`result = Number('324e-1'); // 32.4 (string to number)`);
-console.log( Number(true));
-console.log(`result = Number(true); // 1 (boolean to number)`);
-console.log(Number(false));
-console.log(`result = Number(false); // 0 (boolean to number)`);
-console.log(Number(null));
-console.log(`result = Number(null); // 0 (null to number)`);
-console.log(Number(' ') );
-console.log(`result = Number(' '); // 0 (empty string to number)`);
-console.log(Number('hello'));
-console.log(`result = Number('hello'); // NaN (non-numeric string to number)`);
-console.log(Number(undefined));
-console.log(`result = Number(undefined); // NaN (undefined to number)`);
-console.log(Number(NaN));
-console.log(`result = Number(NaN); // NaN (NaN to number)`);
-console.log(parseInt('20.01'));
-console.log(`result = parseInt('20.01'); // 20 (parses integer from string)`);
-console.log(parseFloat('20.01'));
-console.log(`result = parseFloat('20.01'); // 20.01 (parses float from string)`);
-console.log(+'20.01');
-console.log(`result = +'20.01'; // 20.01 (unary plus operator converts to number)`);
-console.log(Math.floor('20.01'));
-console.log(`result = Math.floor('20.01'); // 20 (rounds down to nearest integer)`);
-console.log(String(324));
-console.log(`result = String(324); // "324" (number to string)`);
-console.log(String(2 + 4));
-console.log(`result = String(2 + 4); // "6" (expression to string)`);
-console.log(String(null));
-console.log(`result = String(null); // "null" (null to string)`);
-console.log(String(undefined));
-console.log(`result = String(undefined); // "undefined" (undefined to string)`);
-console.log(String(NaN));
-console.log(`result = String(NaN); // "NaN" (NaN to string)`);
-console.log(String(true));
-console.log(`result = String(true); // "true" (boolean to string)`);
-console.log(String(false));
-console.log(`result = String(false); // "false" (boolean to string)`);
-console.log((324).toString());
-console.log(`result = (324).toString(); // "324" (number to string using toString())`);
-console.log(true.toString());
-console.log(`result = true.toString(); // "true" (boolean to string using toString())`);
-console.log(Boolean(''));
-console.log(`result = Boolean(''); // false (empty string to boolean)`);
-console.log(Boolean(0)  );
-console.log(`result = Boolean(0); // false (0 to boolean)`);
-console.log(Boolean(undefined));
-console.log(`result = Boolean(undefined); // false (undefined to boolean)`);
-console.log(Boolean(null));
-console.log(`result = Boolean(null); // false (null to boolean)`);
-console.log(Boolean(NaN));
-console.log(`result = Boolean(NaN); // false (NaN to boolean)`);
+// console.log(Number('324'));
+// console.log(`result = Number('324'); // 324 (string to number)`);
+// console.log(Number('324e-1') );
+// console.log(`result = Number('324e-1'); // 32.4 (string to number)`);
+// console.log( Number(true));
+// console.log(`result = Number(true); // 1 (boolean to number)`);
+// console.log(Number(false));
+// console.log(`result = Number(false); // 0 (boolean to number)`);
+// console.log(Number(null));
+// console.log(`result = Number(null); // 0 (null to number)`);
+// console.log(Number(' ') );
+// console.log(`result = Number(' '); // 0 (empty string to number)`);
+// console.log(Number('hello'));
+// console.log(`result = Number('hello'); // NaN (non-numeric string to number)`);
+// console.log(Number(undefined));
+// console.log(`result = Number(undefined); // NaN (undefined to number)`);
+// console.log(Number(NaN));
+// console.log(`result = Number(NaN); // NaN (NaN to number)`);
+// console.log(parseInt('20.01'));
+// console.log(`result = parseInt('20.01'); // 20 (parses integer from string)`);
+// console.log(parseFloat('20.01'));
+// console.log(`result = parseFloat('20.01'); // 20.01 (parses float from string)`);
+// console.log(+'20.01');
+// console.log(`result = +'20.01'; // 20.01 (unary plus operator converts to number)`);
+// console.log(Math.floor('20.01'));
+// console.log(`result = Math.floor('20.01'); // 20 (rounds down to nearest integer)`);
+// console.log(String(324));
+// console.log(`result = String(324); // "324" (number to string)`);
+// console.log(String(2 + 4));
+// console.log(`result = String(2 + 4); // "6" (expression to string)`);
+// console.log(String(null));
+// console.log(`result = String(null); // "null" (null to string)`);
+// console.log(String(undefined));
+// console.log(`result = String(undefined); // "undefined" (undefined to string)`);
+// console.log(String(NaN));
+// console.log(`result = String(NaN); // "NaN" (NaN to string)`);
+// console.log(String(true));
+// console.log(`result = String(true); // "true" (boolean to string)`);
+// console.log(String(false));
+// console.log(`result = String(false); // "false" (boolean to string)`);
+// console.log((324).toString());
+// console.log(`result = (324).toString(); // "324" (number to string using toString())`);
+// console.log(true.toString());
+// console.log(`result = true.toString(); // "true" (boolean to string using toString())`);
+// console.log(Boolean(''));
+// console.log(`result = Boolean(''); // false (empty string to boolean)`);
+// console.log(Boolean(0)  );
+// console.log(`result = Boolean(0); // false (0 to boolean)`);
+// console.log(Boolean(undefined));
+// console.log(`result = Boolean(undefined); // false (undefined to boolean)`);
+// console.log(Boolean(null));
+// console.log(`result = Boolean(null); // false (null to boolean)`);
+// console.log(Boolean(NaN));
+// console.log(`result = Boolean(NaN); // false (NaN to boolean)`);
 
 
 
@@ -140,24 +135,18 @@ console.log(`result = Boolean(NaN); // false (NaN to boolean)`);
 
 
 
+let a = 1;
+let b = 1;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(a; a <= 10; a++  )
+{
+  for(b; b <= 10; b++)
+  {
+    console.log(a + '*' + b + '=' + a*b   );
+  }
+  b=1;
+}
 
 
 

@@ -65,6 +65,38 @@
     margin: 30px 0;
     border: 1px solid #858584;
   }
+
+  form{
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding-left: 20px;
+  
+    &:focus-within
+    {
+      box-shadow: 0px 2px 4px 0px #0000006c inset;
+    }
+  
+    input{
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .button
+    {
+      padding: 20px 50px;
+      &:active
+      {
+        color: #A259FF;
+      }
+    }
+  
+  }
+  
 }
 
 
@@ -85,81 +117,54 @@
 }
 
 
-form{
-  width: 100%;
-  max-width: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #FFFFFF;
-  border-radius: 20px;
-  padding-left: 20px;
-
-  &:focus-within
-  {
-    box-shadow: 0px 2px 4px 0px #0000006c inset;
-  }
-
-  input{
-    width: 100%;
-    padding: 20px 0;
-  }
-
-  .button
-  {
-    padding: 20px 50px;
-    &:active
-    {
-      color: #A259FF;
-    }
-  }
-
-}
 
 
 @media only screen and (max-width:490px)
 {
-  form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-    background: transparent;
-    padding-left: 0;
-
-    &:focus-within
-    {
-      box-shadow: none;
-    }
-
-    input{
-      box-sizing: border-box;
+  .footer
+  {
+    form{
       width: 100%;
-      padding: 12px 0 12px 20px;
-      border-radius: 20px;
-      background-color: #fff;
-      &:focus
-      {
-        box-shadow: 0px 2px 4px 0px #0000006c inset;
-      }
-    }
-
-    .button
-    {
-      padding: 12px ;
       display: flex;
-      align-items: center;
-      gap: 12px;
-
-      &::before
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      background: transparent;
+      padding-left: 0;
+  
+      &:focus-within
       {
-        content: url('../../imgs/Subscribe.svg');
+        box-shadow: none;
       }
-
-      &:active
+  
+      input{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 0 12px 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        &:focus
+        {
+          box-shadow: 0px 2px 4px 0px #0000006c inset;
+        }
+      }
+  
+      .button
       {
-        color: #A259FF;
+        padding: 12px ;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+  
+        &::before
+        {
+          content: url('../../imgs/Subscribe.svg');
+        }
+  
+        &:active
+        {
+          color: #A259FF;
+        }
       }
     }
   }
