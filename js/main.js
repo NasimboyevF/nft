@@ -18,6 +18,7 @@ const mod = document.querySelector('.mod')
   })
 
 
+
 const nfts = document.querySelector('.nfts'); 
 const collections = document.querySelector('.Collections'); 
 const cards = document.querySelector('.marketplace__cards'); 
@@ -33,7 +34,6 @@ nfts.addEventListener('click', ()=> {
 collections.addEventListener('click', ()=> {
   collections.classList.add('activ');
   nfts.classList.remove('activ');
-
   cards.classList.add('none');
   cardsCol.classList.remove('none');
 })
@@ -135,20 +135,18 @@ collections.addEventListener('click', ()=> {
 
 
 
-let a = 1;
-let b = 1;
+// let a = 1;
+// let b = 1;
 
 
-for(a; a <= 10; a++  )
-{
-  for(b; b <= 10; b++)
-  {
-    console.log(a + '*' + b + '=' + a*b   );
-  }
-  b=1;
-}
-
-
+// for(a; a <= 10; a++  )
+// {
+//   for(b; b <= 10; b++)
+//   {
+//     console.log(a + '*' + b + '=' + a*b   );
+//   }
+//   b=1;
+// }
 
 
 
